@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike Conaway — Python, Data Science & Frontend Developer. AI Puppetmaster.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="navlinks">
+      <a href="#skills">Skills</a>
+      <a href="#ofd">OFD Brand</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>Now Available for Work!</span>
+    <h1><br><span>Algorithms to Interfaces.</span><br></h1>
+    <p class="sub">I bridge the gap between complex data science & elegant user experiences. Engineering robust data pipelines in Python & translate them into stunning frontends, leveraging AI to build smarter solutions from the ground up.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-ghost" href="mailto:mikecona2@gmail.com">Ready to go? Let's chat!</a>
+    </div>
+  </div>
+</header>
+
+<section class="block reveal">
+  <div class="wrap">
+    <div>
+      <span class="tag-pill mono">FEATURED</span>
+      <h2>Health Data Guidance</h2>
+      <p class="desc">A custom built algorithm to detect anomalies in health data based on your personal results with help from Gemini. This is a tool to help you understand your health data and identify patterns that may be worth discussing with your doctor.</p>
+    </div>
+    <div class="spec-card">
+      <div class="spec-row"><span class="k mono">STACK</span><span class="v">Python · Gemini API · JS</span></div>
+      <div class="spec-row"><span class="k mono">STATUS</span><span class="v">Ongoing...</span></div>
+      <div class="spec-row"><span class="k mono">VERSION</span><span class="v">v0.7.7</span></div>
+      <div class="spec-row"><span class="k mono">TIMELINE</span><span class="v">US Rollout - Fall 2026</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ofd">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>On Full Display (Brand)</h2>
+    </div>
+    <div class="cards">
+      <div class="card c1 reveal">
+        <div>
+          <h3>Luxury. OFD.</h3>
+          <p>Whether you're indie or established, this storefront is designed to showcase your brand in the most elegant way possible.</p>
+          <div class="tags"><span>WP Theme</span></div>
+        </div>
+        <a class="arrow" href="">Preorder</a>
+        <!-- link to gumroad -->
+      </div>
+      <div class="card c2 reveal">
+        <div>
+          <h3>VIP. OFD.</h3>
+          <p>Portfolio. Personal. Professional. Oh my. Stand out online with this theme that highlights your unique identity.</p>
+          <div class="tags"><span>WP Theme</span></div>
+        </div>
+        <a class="arrow" href="">Coming Soon</a>
+        <!-- link to gumroad -->
+      </div>
+      <div class="card c3 reveal">
+        <div>
+          <h3>Jet-Setter. OFD.</h3>
+          <p>Come one, come all. Show off your journey or your place for rent. This one's for the explorers.</p>
+          <div class="tags"><span>WP Theme</span></div>
+        </div>
+        <a class="arrow" href="#">Coming Soon</a>
+        <!-- link to gumroad -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills-block" id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Experience? Check!</h2>
+    </div>
+    <div class="skill-grid reveal">
+      <div class="skill-cell">
+        <h3>Education</h3>
+        <p>University of California, Berkeley</p>
+      </div>
+      <div class="skill-cell">
+        <h3>Early Career</h3>
+        <p>10 years in FinTech at Xero</p>
+      </div>
+      <div class="skill-cell">
+        <h3>Also, Wordpress</h3>
+        <p>3 years as a WordPress developer</p>
+      </div>
+      <div class="skill-cell">
+        <h3>Checklist:</h3>
+        <p>Python, JS, React, Django, FastAPI, Flask, Rust, Wordpress, Gemini API</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Nice to meet you!</h2>
+        <h2>I'm Mike.</h2>
+      <!-- add a headshot-->
+    </div>
+    <div class="reveal">
+      <p>My career began with writing optimized Python algorithms at Xero to crafting stunning, fluid frontends, I build software at the intersection of data and user experience. My data science background allows me to approach development with an analytical lens, ensuring every pipeline is optimized before it ever hits the screen. I bridge the gap between heavy technical computation and beautiful digital products.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Let's work together!</h2>
+      <p class="sub">Currently open to freelance, part time or full time remote roles!</p>
+      <a class="btn btn-primary" href="mailto:mikecona2@gmail.com">Let's talk</a>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Mike Conaway. All rights reserved.</span>
+      <div class="foot-links">
+        <a href="http://www.github.com/mikecona3">GitHub</a>
+        <a href="http://www.linkedin.com/in/conaway5">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, { threshold:0.15 });
+  revealEls.forEach(el=>obs.observe(el));
+</script>
+
+</body>
+</html>
